@@ -1,0 +1,27 @@
+##Pablz's zshrc for ROOT
+
+#SETUP
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+
+zstyle :compinstall filename '~/.zshrc'
+autoload -Uz compinit
+compinit
+
+#SETTINGS
+PROMPT="[%n@%B%F{red}%m%f%b:%F{red}%~%f]$ "
+RPROMPT='%B %K{red}%F{black}ROOT%f%k %b %*'
+
+##PLUGINS
+source $HOME/Git/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/Git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+#ALIASES
+alias nv='nvim'
+alias vim='nvim'
+alias ll='lsd -l'
+alias la='lsd -la'
+alias ls='lsd'
