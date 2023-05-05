@@ -18,6 +18,10 @@ RPROMPT='%*'
 source ~/Git/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/Git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+##START
+nerdfetch
+echo ""
+
 
 #ALIASES
 alias nv='nvim'
@@ -25,4 +29,5 @@ alias vim='nvim'
 alias ll='lsd -l'
 alias la='lsd -la'
 alias ls='lsd'
+alias tree='tree -C'
 alias pablo='clear && source ~/.zshrc'
