@@ -15,8 +15,8 @@ PROMPT="[%n@%B%F{red}%m%f%b:%F{red}%~%f]$ "
 RPROMPT='%B %K{red}%F{black}ROOT%f%k %b %*'
 
 ##PLUGINS
-source $HOME/Git/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/Git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/pablo/.config/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/pablo/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 #ALIASES

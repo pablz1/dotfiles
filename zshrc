@@ -12,11 +12,12 @@ compinit
 
 #SETTINGS
 PROMPT="[%n@%B%F{green}%m%f%b:%F{green}%~%f]$ "
-RPROMPT='%*'
+RPROMPT='$(git_super_status)'
 
 ##PLUGINS
-source ~/Git/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/Git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh-plugins/zsh-git-prompt/zshrc.sh
 
 ##START
 nerdfetch
