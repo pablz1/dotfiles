@@ -10,19 +10,29 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 
-#SETTINGS
-PROMPT="[%n@%B%F{green}%m%f%b:%F{green}%~%f]$ "
-RPROMPT='$(git_super_status)'
+##GIT SETUP
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+zstyle ':vcs_info:*' check-for-changes true
+#zstyle ':vcs_info:git:*' formats '%s %b'
+zstyle ':vcs_info:git*' formats "%{$fg[yellow]%}%{$reset_color%} (%r/%b %m%u%c)"
 
-##PLUGINS
-source ~/.config/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.config/zsh-plugins/zsh-git-prompt/zshrc.sh
+#PROMPT
+PROMPT="[%n@%B%F{green}%m%f%b:%F{green}%~%f]$ "
+RPROMPT='${vcs_info_msg_0_}'
+
+##PLUGINS ZPLUG
+export ZPLUG_HOME=/home/pablo/.config/zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting"
 
 ##START
 nerdfetch
 echo ""
-
 
 #ALIASES
 alias nv='nvim'
