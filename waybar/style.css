@@ -164,7 +164,7 @@
 
 #window {
 	margin-right: 10pt;
-	margin-left: 10pt;
+	margin-left: 35pt;
 }
 
 #pulseaudio {
@@ -213,61 +213,61 @@
 }
 
 #custom-arrow1 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @time;
 	background: @date;
 }
 
 #custom-arrow2 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @date;
 	background: @battery;
 }
 
 #custom-arrow3 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @layout;
 	background: @battery;
 }
 
 #custom-arrow4 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @battery;
 	background: @temp;
 }
 
 #custom-arrow5 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @temp;
 	background: @cpu;
 }
 
 #custom-arrow6 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @cpu;
 	background: @memory;
 }
 
 #custom-arrow7 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @memory;
 	background: @network;
 }
 
 #custom-arrow8 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @network;
 	background: @sound;
 }
 
 #custom-arrow9 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @sound;
 	background: transparent;
 }
 
 #custom-arrow10 {
-	font-size: 16pt;
+	font-size: 17.5pt;
 	color: @unfocused;
 	background: transparent;
 }
