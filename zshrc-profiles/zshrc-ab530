@@ -1,0 +1,41 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000000
+SAVEHIST=1000000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '~/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+##Alice zshrc
+#PROMPT="[%n@%B%F{cyan}%m%f%b:%F{cyan}%~%f]$ "
+#RPROMPT='%*'
+
+PROMPT="%~ %F{magenta}%B%b%f "
+RPROMPT=""
+
+clear
+
+echo ""
+#pfetch
+#nitch
+uname -s -r | toilet --rainbow -f smblock
+echo "-------------------------------------------"
+hostnamectl
+#pokemon-colorscripts -n ditto  --no-title 
+echo ""
+
+##Aliases
+alias nv='nvim'
+alias vim='nvim'
+alias ll='lsd -l'
+alias la='lsd -la'
+alias ls='lsd'
+alias pablo='clear && source ~/.zshrc'
+
+##Syntax Highlighting
+source ~/Downloads/Git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
